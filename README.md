@@ -4,10 +4,10 @@ API para usar el BME680 con el ESP32C6. Desarrollada usando VSCode en IDF versi�
 Para manipular la librería solo es necesario modificar el archivo `main.c`. En caso de querer hacer otras configuraciones:
 
 <ul>
-        <il>bme680.c >> Contiene definiciones de direcciones de memoria del BME680.</il>
-        <il>bme680.h >> Contiene variables para seleccionar modos de oversampling y coeficiente filtro IIR.</il>
-        <il>reg_access.h >> Establece definición de selección entre I2C/SPI (ver variable `PROTO_I2C/PROTO_SPI`)</il>
-        <il>reg_access.c >> Establece las direcciones y pines usados por el ESP32 para I2C/SPI. También la dirección del BME680. </il>
+        <li>bme680.c >> Contiene definiciones de direcciones de memoria del BME680.</li>
+        <li>bme680.h >> Contiene variables para seleccionar modos de oversampling y coeficiente filtro IIR.</li>
+        <li>reg_access.h >> Establece definición de selección entre I2C/SPI (ver variable `PROTO_I2C/PROTO_SPI`)</li>
+        <li>reg_access.c >> Establece las direcciones y pines usados por el ESP32 para I2C/SPI. También la dirección del BME680. </li>
 </ul>
 
 ## Instrucciones de uso
