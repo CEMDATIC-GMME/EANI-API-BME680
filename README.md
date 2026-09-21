@@ -14,3 +14,14 @@ Para usar I2C o SPI, modificar campo `.protocolo` del struct `bme680_config_t cf
                 .heater_wait_ms = 0x59,
                 .activar_gas    = true,
         };
+
+### Temperatura heater
+Variable `heater_res` en `main.c`. Modificar según parámetro para temperatura objetivo; tercer parámetro para temperatura ambiente.
+Ejemplo: 
+
+        uint8_t heater_res = bme680_calc_heater_res(&calib, 320, 25);
+
+<ul>
+        <li>Temperatura objetivo >> 320 ºC</li>
+        <li>Temperatura ambiente >> 25 ºC</li>
+</ul>
